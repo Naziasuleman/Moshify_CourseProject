@@ -37,7 +37,7 @@ h3{
 p{
     margin-top: 0;
 }
-/*for laptops screen*/
+/* for laptops screen */
 @media screen and (min-width: 1024px) {
     body{
         font-size: 1.8rem;
@@ -54,7 +54,7 @@ p{
 }
 
 
-/*Links*/
+/*  Links  */
 a{
     text-decoration: none;
 }
@@ -82,7 +82,7 @@ a{
 }
 
 
-/*Badges*/
+/*   Badges  */
 .badge {
     border-radius: 20px;
     font-size: 2rem;
@@ -90,7 +90,6 @@ a{
     padding: 0.5rem 2rem;
     white-space: nowrap;
 }
-
 
 .badge--primary{
     background:var(--color-primary) ;
@@ -110,9 +109,37 @@ a{
     .badge{
         font-size: 1.5rem;;
     }
-
     .badge--small{
         font-size: 1.2rem;
+    }
+    
+}
+
+/*  Lists  */
+.list{
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headings);
+}
+
+.list--inline .list__item{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick {
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem;
+}
+
+.list--tick .list__item{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:1024px){
+    .list--tick .list__item{
+        padding-left: 0;
     }
     
 }
